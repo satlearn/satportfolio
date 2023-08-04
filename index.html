@@ -15,16 +15,18 @@
     <!-- Header-section -->
     <header class="header">
         <nav class="nav">
-            <div>
-            <a href="#" class="nav_logo">Sat's Portfolio</a>
-            </div>
-            <div class="nav_menu" id="nav_menu">
+            <div>                
+                <i class="fa-solid fa-beat-fade"><img src="sd-1.png" alt="" class="src" class="nav_logo"></i>
+                <!-- <a href="#" class="nav_logo"><i class="fa-solid fa-beat-fade">Sat's Portfolio</a></i> -->
+            </div>        
+            <div class="nav_menu" id="nav_menu">               
                <ul class="nav_list">
                 <li class="nav_item"><a href="#Home" class="nav_link active">Home</a></li>
-                <li class="nav_item"><a href="#About" class="nav_link active">About</a></li>
-                <li class="nav_item"><a href="#Skills" class="nav_link active">Skills</a></li>
-                <li class="nav_item"><a href="#project" class="nav_link active">Projects</a></li>
-                <li class="nav_item"><a href="#Contact" class="nav_link active">Contact</a></li>
+                <li class="nav_item"><a href="#about" class="nav_link active">About</a></li>
+                <li class="nav_item"><a href="#skills" class="nav_link active">Skills</a></li>
+                <li class="nav_item"><a href="#Edu" class="nav_link active">Education</a></li>
+                <li class="nav_item"><a href="#pro" class="nav_link active">Projects</a></li>
+                <li class="nav_item"><a href="#contact" class="nav_link active">Contact</a></li>
                </ul>
             </div>
             <div class="nav_toggle" id="nav_toggle">
@@ -35,12 +37,12 @@
     <!-- Main-setion -->
     <main class="main"> 
         <!-- HOME SECTION -->
-        <section class="home bd_grid" id="home">
-            <div class="home_data">
-                <h1 class="home_title">Hi, <br> I am <span class="home_title_color"><i>Sathya Dhanabal</i></span><br>Software Developer</h1><br>
-                <button type="button" class="btn">Contact</button>
+        <section class="home bd_grid" id="Home">
+            <div class="home_data" data-aos="fade-down"->
+                <h1 class="home_title">Hi, <br> I am <span class="home_title_color">Sathya Dhanabal</span><br><em class="soft">Software Developer</em></h1><br>
+                <button type="button" class="btn"><a href="Sathya Dhanabal-CV-16March.pdf" download class="btn">Download cv</a></button>
             </div>            
-            <div class="home_img">
+            <div class="home_img" data-aos="fade-left">
                 <img src="img1.svg" alt="img">
             </div> 
             <!-- <div class="home_social"> 
@@ -52,31 +54,31 @@
         </section>
 
          <!-- ABOUT SECTION -->
-        <section class="about_sec" id="about">
-           <h1 class="about_heading">About</h1>
+        <section class="about_sec" data-aos="fade-down">
+           <h1 class="about_heading"  id="about">About me</h1>
            <div class="about_container">
-                <div class="about_img">
+                <div class="about_img"  data-aos="fade-right">
                     <img src="img2.svg" alt="img">
                 </div>
-                <div class="about_me">
+                <div class="about_me" data-aos="fade-down">
                     <h2 class="head">Hi</h2>
                     <div class="about_para">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus culpa sequi vitae architecto porro, iure illo ullam deleniti exercitationem ipsam aperiam quam nulla amet reiciendis dolor nobis earum sapiente. Repellendus!
-                        Ipsum sed enim consequatur excepturi, fugiat, vitae dignissimos animi tempore dolorum dicta ab, porro nam! Exercitationem ipsam sapiente, architecto eos praesentium sit nam in aperiam eum culpa impedit mollitia distinctio.
+                        <p>As an enthusiastic Junior Software Developer, I have a strong understanding of HTML, JavaScript, CSS, Python, SQLite3, MySQL and Django. I recently completed a course in these technologies and created some project to demonstrate my skills. I love learning and am committed to continuous improvement. I can handle both front-end and back-end development, and I'm eager to contribute my expertise to your organization's success.
+                        </p>
                     </div>
                 </div>
            </div>
         </section>
 
         <!-- SKILLS SECTION -->
-        <section class="skills_sec" id="skills">
-            <h1 class="skills_heading">Skills</h1>
+        <section class="skills_sec" data-aos="fade-down">
+            <h1 class="skills_heading" id="skills">Skills</h1>
             <div class="skills_container">
                 <div class="skills_div">
                     <h2 class="skill_subtitle">Professional Skills</h2>
                     <p class="skills_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis et qui officia nostrum dolorum.</p>
                     <!-- SKILLS LIST -->
-                    <div class="skills_data">
+                    <div class="skills_data" data-aos-delay="50" data-aos="fade-left">
                         <div class="skills_name">
                             <i class="fa-brands fa-html5 skills_icon"></i>
                             <span class="skill">HTML5</span>
@@ -85,7 +87,7 @@
                         <div class="skill_bar skills_html"></div>
                     </div>
                     <!-- SKILLS CSS -->
-                    <div class="skills_data">
+                    <div class="skills_data" data-aos-delay="100" data-aos="fade-left">
                         <div class="skills_name">
                             <i class="fa-brands fa-css3-alt skills_icon"></i>
                             <span class="skill">CSS3</span>
@@ -94,7 +96,7 @@
                         <div class="skill_bar skills_css"></div>
                     </div>
                     <!-- SKILLS JS -->
-                    <div class="skills_data">
+                    <div class="skills_data" data-aos-delay="150" data-aos="fade-left">
                         <div class="skills_name">
                             <i class="fa-brands fa-js skills_icon"></i>
                             <span class="skill">JAVASCRIPT</span>
@@ -103,7 +105,7 @@
                         <div class="skill_bar skills_js"></div>
                     </div>
                     <!-- DATABASE -->
-                    <div class="skills_data">
+                    <div class="skills_data" data-aos-delay="200" data-aos="fade-left">
                         <div class="skills_name">
                             <i class="fa-solid fa-database skills_icon"></i>
                             <span class="skill">MYSQL</span>
@@ -112,7 +114,7 @@
                         <div class="skill_bar skills_sql"></div>
                     </div> 
                     <!-- PYTHON -->
-                    <div class="skills_data">
+                    <div class="skills_data" data-aos-delay="250" data-aos="fade-left">
                         <div class="skills_name">
                             <i class="fa-brands fa-python skills_icon"></i>
                             <span class="skill">PYTHON</span>
@@ -121,13 +123,13 @@
                         <div class="skill_bar skills_py"></div>
                     </div>                                                                    
                 </div> 
-                <div class="skill_img">
+                <div class="skill_img" data-aos-delay="300" data-aos="fade-left">
                     <img src="img3.svg" alt="img">
                 </div>                                
             </div>
         </section>
         <!-- EDUCATION SECTION AND EXPERIENCE SECTION-->
-        <section class="main_container">
+        <section class="main_container" id="Edu">
             <div class="div_main">
                 <!-- EDUCATION SEC -->
                 <div class="col edu_main">
@@ -135,26 +137,27 @@
                         <h2>Education</h2>
                     </div>
                     <div class="e_content">
-                        <div class="box">
-                            <h4>2002 - 2004</h4>
-                            <h3>High School Degree</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi commodi molestias odio expedita aliquid ipsa illum dolorum, tenetur officia tempore repellat cum, voluptate, quae officiis sequi iure aut odit quo!</p>
-                        </div>
-                        <div class="box">
-                            <h4>2004 - 2007</h4>
-                            <h3>Bachelor's Degree</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi commodi molestias odio expedita aliquid ipsa illum dolorum, tenetur officia tempore repellat cum, voluptate, quae officiis sequi iure aut odit quo!</p>
-                        </div>
-                        <div class="box">
-                            <h4>2007 - 2009</h4>
-                            <h3>Master's Degree</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi commodi molestias odio expedita aliquid ipsa illum dolorum, tenetur officia tempore repellat cum, voluptate, quae officiis sequi iure aut odit quo!</p>
-                        </div>
-                        <div class="box">
+                        <div class="box" data-aos-delay="50" data-aos="fade-left">
                             <h4>2009 - 2010</h4>
-                            <h3>Bachelor of Education</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi commodi molestias odio expedita aliquid ipsa illum dolorum, tenetur officia tempore repellat cum, voluptate, quae officiis sequi iure aut odit quo!</p>
+                            <h3>BACHELOR OF EDUCATION (B.ED) - SPECIALISATION MATHEMATICS</h3>
+                            <p>Star college of education<br><em>Address:</em> Periyamanali, Trichengode, , Namakkal, India
+                            </p>
                         </div>
+                        <div class="box" data-aos-delay="75" data-aos="fade-left">
+                            <h4>2008 - 2009</h4>
+                            <h3>MASTER OF SCIENCE (M.SC) - MATHEMATICS</h3>
+                            <p>Annamalai university<br><em>Address:</em> Annamalai nagar, Chidambaram, India</p>
+                        </div>
+                        <div class="box" data-aos-delay="100" data-aos="fade-left">
+                            <h4>2004 - 2007</h4>
+                            <h3>BACHELOR OF SCIENCE (B.SC) - MATHEMATICS</h3>
+                            <p>Vivekanandha arts and science for women<br><em>Address:</em> Elayampalayam, Tiruchengode,Namakkal, India</p>
+                        </div>
+                        <div class="box" data-aos-delay="125" data-aos="fade-left">
+                            <h4>2006 - 2007</h4>
+                            <h3>XII STANDARD (12TH)</h3>
+                            <p>Govt Higher Secondary School<br><em>Address:</em> Vaiyappamalai, Tamil Nadu, India</p>
+                        </div>                        
                     </div>
                 </div>
                 <!-- EXPERIENCE SEC -->
@@ -163,71 +166,122 @@
                         <h2>Experience</h2>
                     </div>
                     <div class="e_content">
-                        <div class="box">
+                        <div class="box" data-aos-delay="50" data-aos="fade-left">
                             <h4>2017 - 2018</h4>
-                            <h3>Primary School Teacher</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi commodi molestias odio expedita aliquid ipsa illum dolorum, tenetur officia tempore repellat cum, voluptate, quae officiis sequi iure aut odit quo!</p>
+                            <h3>TEACHER IN A PRIMARY SCHOOL - KALAIMAGAL VIDYA MANDIR MATRICULATION SCHOOL</h3>
+                            <p>Chennai, India</p>
+                            <p>1. Develop lesson plans by the curriculum objectives including mathematics, science, and humanities.<br>
+                            2. Educate the students through activity-based methods.
+                            </p>
                         </div>
-                        <div class="box">
+                        <!-- <div class="box">
                             <h4>2010 - 2011</h4>
                             <h3>Primary School Teacher</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi commodi molestias odio expedita aliquid ipsa illum dolorum, tenetur officia tempore repellat cum, voluptate, quae officiis sequi iure aut odit quo!</p>
-                        </div>
+                        </div> -->
+                        <div class="skill_img" data-aos-delay="150" data-aos="fade-left">
+                            <img src="img4.svg" alt="img" class="img4">
+                        </div>                 
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- PROJECT SECTION -->
-        <section class="pro_section" id="pro"> 
-            <h1 class="section_title">My Projects</h1>
+        <section class="pro_section"> 
+            <h1 class="section_title" id="pro">My Projects</h1>
             <div class="pro_container container-fluid">
-                <div class="pro_box">
-                    <img src="lap1.jpg" alt="img">
+                <div class="pro_box" data-aos-delay="50" data-aos="fade-down">
+                    <img src="calculator.jpg" alt="img">
                     <div class="pro_layer">
-                        <h4>Webdesign</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error officia unde repellendus. Doloremque nam maiores molestian.</p>
-                        <a href="http://127.0.0.1:5500/Bootcamp/calculator/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h4>Calculator</h4>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JAVASCRIPT</p>
+                        <a href="https://satlearn.github.io/calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="pro_box">
-                    <img src="lap1.jpg" alt="img">
+                <div class="pro_box" data-aos-delay="50" data-aos="fade-down"> 
+                    <img src="timer.jpg" alt="img">
                     <div class="pro_layer">
-                        <h4>Webdesign</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error officia unde repellendus. Doloremque nam maiores molestian.</p>
-                        <a href="http://127.0.0.1:5500/Bootcamp/Timer/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h4>Timer</h4>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JAVASCRIPT</p>
+                        <a href="https://satlearn.github.io/timer/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="pro_box">
-                    <img src="lap1.jpg" alt="img">
+                <div class="pro_box" data-aos-delay="50" data-aos="fade-down">
+                    <img src="colors.jpg" alt="img">
                     <div class="pro_layer">
-                        <h4>Webdesign</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error officia unde repellendus. Doloremque nam maiores molestian.</p>
-                        <a href="http://127.0.0.1:5500/Bootcamp/Js-project-colorflipper/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h4>Color Flipper</h4>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JAVASCRIPT</p>
+                        <a href="https://satlearn.github.io/colorFlipper/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="pro_box">
-                    <img src="lap1.jpg" alt="img">
+                <div class="pro_box" data-aos-delay="100" data-aos="fade-down">
+                    <img src="stopwatch.jpg" alt="img">
                     <div class="pro_layer">
-                        <h4>Webdesign</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error officia unde repellendus. Doloremque nam maiores molestian.</p>
-                        <a href="http://127.0.0.1:5500/Bootcamp/stopwatch/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h4>Stop Watch</h4>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JAVASCRIPT</p>
+                        <a href="https://satlearn.github.io/stopwatch/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="pro_box">
-                    <img src="lap1.jpg" alt="img">
+                <div class="pro_box" data-aos-delay="100" data-aos="fade-down">
+                    <img src="Todo.jpg" alt="img">
                     <div class="pro_layer">
-                        <h4>Webdesign</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error officia unde repellendus. Doloremque nam maiores molestian.</p>
-                        <a href="http://127.0.0.1:5500/Bootcamp/Todo-list/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h4>To-do List</h4>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JAVASCRIPT</p>
+                        <a href="https://satlearn.github.io/Tdo-list/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="pro_box">
-                    <img src="lap1.jpg" alt="img">
+                <div class="pro_box" data-aos-delay="100" data-aos="fade-down">
+                    <img src="university.jpg" alt="img">
                     <div class="pro_layer">
-                        <h4>Webdesign</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error officia unde repellendus. Doloremque nam maiores molestian.</p>
-                        <a href="https://satlearn.github.io/EducationWebsite/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h4>University</h4>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JAVASCRIPT</p>
+                        <a href="https://satlearn.github.io/EducationWebsite/#Features"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="pro_box" data-aos-delay="150" data-aos="fade-down">
+                    <img src="film3.jpg" alt="img">
+                    <div class="pro_layer">
+                        <h4>FilmDB</h4>
+                        <p>SQLite</p>
+                        <p>Python</p>
+                        <p>HTML</p>
+                        <p>CSS</p>                        
+                        <a href="https://satlearn.github.io/filmDB/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="pro_box" data-aos-delay="150" data-aos="fade-down">
+                    <img src="quiz.jpg" alt="img">
+                    <div class="pro_layer">
+                        <h4>Quiz Game</h4>
+                        <p>SQLite</p>
+                        <p>Python</p>
+                        <p>HTML</p>
+                        <p>CSS</p>                        
+                        <a href="https://satlearn.github.io/quizgame/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="pro_box" data-aos-delay="150" data-aos="fade-down">
+                    <img src="dice.jpg" alt="img">
+                    <div class="pro_layer">
+                        <h4>Dice Game</h4>
+                        <p>SQLite</p>
+                        <p>Python</p>
+                        <p>HTML</p>
+                        <p>CSS</p>                        
+                        <a href="https://satlearn.github.io/dicegame/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                </div>
@@ -235,15 +289,74 @@
         </section>
 
         <!-- CONTACT SECTION -->
-        <section class="contact_section" id="contact">
-            <h2 class="contact_title">Contact</h2>
+        <section class="contact_section" data-aos="fade-down">
+            <h2 class="contact_title" id="contact">Contact</h2>
             <div class="contact_container">
-                 <form action="#" class="contact-form">
+                 <!-- <form action="#" class="contact-form"> 
                     <input type="text" placeholder="Name" class="control_input"><br><br>
                     <input type="mail" placeholder="Email" class="control_input"><br><br>
                     <textarea name="#" id="#" cols="0" rows="8" class="control_input"></textarea><br><br>
                     <input type="button" value="Send Message" class="control_button btn">
-                 </form>
+                 </form>-->
+                <main class="row">
+                    <!-- left section column -->
+                    <section class="col col-left">
+                        <div class="contact_title1">
+                            <h2>Get In Touch</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus eius nemo, praesentium dolorum sed</p>
+                        </div>
+                        <div class="contactInfo">
+                            <div class="icongroup">
+                                <div class="icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="details">
+                                    <span>Phone:</span>
+                                    <span>+44 7440384349</span>
+                                </div>
+                            </div>
+                            <div class="icongroup">
+                                <div class="icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="details">
+                                    <span>Email:</span>
+                                    <span>satb2008@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="icongroup">
+                                <div class="icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="details">
+                                    <span>Location:</span>
+                                    <span>Flat 11, Balfour house, IG1 1TL.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- right section column -->
+                    <section class="col col-right">
+                        <form action="" class="msgForm">
+                            <div class="inputGroup halgWidth">
+                                <input type="text" name="" required="required">
+                                <label>Name</label>
+                            </div>
+                            <div class="inputGroup halgWidth">
+                                <input type="text" name="" required="required">
+                                <label>Email</label>
+                            </div>
+                            <div class="inputGroup fullWidth label2">
+                                <textarea name="" id=""  required="required"></textarea>
+                                <label>Subject</label>
+                            </div><br>
+                            <div class="inputGroup halgWidth">
+                                <button>Send Message</button>
+                            </div>
+                        </form>
+                    </section>
+                </main>
             </div>
         </section>
     </main>
@@ -252,15 +365,23 @@
     <footer class="footer">
         <p>Sathya Dhanabal</p>        
         <div class="footer_social"> 
-            <a href="#" class="footer_icon"><i class="fa-brands fa-facebook"></i></a>  
+            <a href="https://www.facebook.com/sathya.bhoopathy" class="footer_icon"><i class="fa-brands fa-facebook"></i></a>  
             <a href="#" class="footer_icon"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="footer_icon"><i class="fa-brands fa-linkedin"></i></a>   
-            <a href="#" class="footer_icon"><i class="fa-brands fa-github"></i></a>  
+            <a href="https://www.linkedin.com/in/sathya-dhanabal-417800236/" class="footer_icon"><i class="fa-brands fa-linkedin"></i></a>   
+            <a href="https://github.com/satlearn" class="footer_icon"><i class="fa-brands fa-github"></i></a>  
         </div>
         <p>&copy; 2023 - All rights reserved.</p>
     </footer>
             
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            duration: 1500,
+            once: false,
+        }
+    );
+</script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 /* Google-font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&family=Satisfy&display=swap');
 
 /* variables */
 :root{
@@ -11,10 +12,10 @@
     --first-color:#a1039b;
     --second-color:#7708ae;
 }
-/* font-style */
+/* font-style 
 :root{
-    --body-font:Poppins;    
-}
+    --body-font:Poppins;     
+}*/
 @media screen and (min-width:768px){
     :root{        
         --normal-font-size:1rem;
@@ -76,53 +77,74 @@ img{
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
   }
   
-  /* Style the header */
+  /* Style the header 
   .header {
     margin-top: -35px;  
     background-color:var(--second-color);
     padding: 25px; 
-    /* position: fixed;   */
-    width: 100%; 
+    position: fixed;  
+    width: 100%;  
+    z-index: 999;
+  }*/
+  .logo{
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  .src{
+    height: 150px;width: 150px;    
+    }
+  .header {
+    margin-top: -35px;
+    background-color: var(--second-color);
+    padding: 25px;
+    position: fixed;
+    width: 100%; /* Adjust the width as needed */
     z-index: 999;
   }
+  
   
   /* Style the navigation bar */
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:100%;
+    height: 50px;
+    /* width:100%; */
   }
   
   /* Style the logo */
   .nav_logo {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: #000;
+    font-family:Satisfy;
   }  
   
   .nav_list {
     list-style: none;
     display: flex;
-    font-weight: bold;
+    font-weight: bold;    
   }
   
   .nav_item {
-    margin-right: 100px;
+    margin-right: 60px;
     font-size: 20px;      
   }
   
   .nav_link {
     text-decoration: none;
     color: #000;
+    font-size: 25px;
   }  
   .nav_link:hover{
     color:#fff;
     position: relative;
+    transition:1s;
   }
   .nav_link:hover::after{
     position: absolute;
@@ -214,6 +236,7 @@ img{
 .home_img{
     width:500px;
     height:300px;
+    margin-top: 50px;
 }
 .home{
     display:flex;    
@@ -228,6 +251,7 @@ img{
 }
 .home_data{
     align-self: center;    
+    margin-top: 100px;
 }
 .home_title{    
     font-weight:bold;
@@ -240,19 +264,24 @@ img{
     color:var(--first-color);
     font-family:'Roboto', sans-serif;
 }
+
+.soft{
+    transition-duration: 8s ;
+}
 .btn{
     padding: 5px 8px;
     border-radius:8px ;
     text-align: center;
-    box-shadow:1px 1px 0.5px #000;
+    /* box-shadow:1px 1px 0.5px #000; */
     background-color: rgb(64,8,170);
     background: linear-gradient(90deg, rgba(64,8,170,1) 0%, rgba(147,97,239,1) 100%);
-    font-size: 25px;    
+    font-size: 25px; 
+    color: #100707;   
 }
 .btn:hover{
     cursor:pointer;
-    transform: scale(.9,.9);
-    opacity: 0.8;    
+    /* transform: scale(.9,.9); */
+    opacity: 0.8;           
 }
 .home_social{
     position: absolute;
@@ -280,6 +309,7 @@ img{
 h1{
     text-align: center;
     margin-right: 10px;
+    font-size: 30px;
 }
 .about_container{
     display: flex;
@@ -296,7 +326,9 @@ h1{
 .about_para p{
     margin-top: 10px;
     font-size: 20px; 
-    color: var(--second-color);   
+    color: var(--second-color);  
+    font-size: 25px; 
+    line-height: 30px;
 }
 @media screen and (max-width: 1000px){
     .about_container {
@@ -445,11 +477,14 @@ h1{
     position: relative;
     padding: 20px;
     border:1px solid rgb(237, 235, 238);
-    background-color: #eab9dc;
+    background-color: #f25bc7;
     cursor: pointer;
     transition: all 0.4s;
     margin-bottom: 20px;
     border-radius: 10px;    
+}
+.box p{
+    font-size: 20px;
 }
 .box:hover{
     border: #000;
@@ -468,12 +503,24 @@ h1{
     background-color: #530482;
     border: 2px solid white;
 }
+
+.img4{
+    height: 400px;
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 150px;
+}
+@media screen and (max-width: 1000px) {
+    .img4{
+        margin-left: 20px;                 
+    }    
+}
+
 @media screen and (max-width: 1000px) {
     .div_main{
         flex-direction: column!important;
         display: block;              
-    }
-    
+    }    
 }
 
 /* MY PROJECTS */
@@ -503,7 +550,7 @@ h1{
 .pro_layer{
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0;    
     width: 100%;
     height: 100%;
     background: 
@@ -515,6 +562,12 @@ h1{
     padding: 0 4rem;
     transform: translateY(100%);
     transition: 0.5s ease;
+}
+
+.pro_layer p{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
 }
 .pro_layer a{
     display: inline-flex;
@@ -538,7 +591,7 @@ h1{
     color: white;
 }
 .pro_layer h4{
-    font-size: 25px;
+    font-size: 30px;
 }
 @media screen and (max-width: 1000px) {
     .pro_container {
@@ -556,7 +609,7 @@ h1{
 
 
 /* CONTACT SECTION */
-.contact_section{
+/* .contact_section{ 
     margin-top: 50px;
 }
 .contact_section h2{
@@ -587,14 +640,145 @@ h1{
     margin-left: 37%; 
     align-items: center; 
 }
+*/
+.contact_section{
+    margin-top: 20px;
+}
+.contact_title{
+    text-align: center;
+    font-size: 30px;
+}
+.contact_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.col-left{
+    flex-basis: 45% ;
+    min-width: 320px;
+    margin-right: 60px;
+    /* background-color: #d49ff3; */
+}
+.col-right{
+    flex-basis: 50%;
+    /* background-color: #b73cfd; */
+}
+.contact_title1{
+    margin-bottom: 5px;
+}
+.contact_title1 h2{
+    font-size: 25px;
+    margin-left: 30px;
+}
+.icongroup{
+    display: flex;
+    align-items: center;
+    margin: 25px;
+    font-size: 20px;
+    color: #000;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+}
+.icon i{
+    font-size: 20px;
+    color: #530482;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.msgForm{
+    /* width:200px; */
+    margin-top: 20px;
+}
+.inputGroup{
+    margin:18px 0px;
+    position: relative;
+    display: flex;
+}
+.halgWidth{
+    flex-basis: 48%;
+}
+.fullWidth{
+   flex-basis: 100%;
+}
+.msgForm input, .msgForm textarea{
+    border: none;
+    outline:none;
+    width: 500px;
+    font-size: 18px;
+    padding: 2px 0px;
+    border-bottom: 2px solid black;
+    color:#000;
+}
+.msgForm textarea, .label2{
+    resize: none;
+    height: 120px;
+    display: block;
+}
+.inputGroup button{
+    cursor: pointer;
+    transition:.6s ease all;
+    position: relative;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #cb96ea;
+    border-radius: 10px;
+}
+.inputGroup button:hover{
+    transform: scale(1.1);
+    background-color: #530482;  
+    color: white;
+
+}
 @media screen and (max-width: 1000px) {
-    .contact_container{
-        width: 400px;
-        margin-left: 60px;
-        transition: 1s;       
+    .row{
+        display: block;
+        text-align: center;
+        align-items:center;
+        width: 40%;
         
     }
+    .contact_section{
+        padding-right: 60px;
+    }
+    .halgWidth{
+        flex-basis: 100%;
+    }
+    .contact_title{
+        margin-right:120px;
+    }
+    .icon{
+        border: none;
+    }
+    .col-left{
+        padding-right: 100%;
+    }
+    .contact_title{
+        text-align: center;
+        margin-left: 40%;
+    }
+    
     
 }
 /* FOOTER */
@@ -602,13 +786,14 @@ h1{
     background-color:var(--second-color);
     color: white;    
     bottom: 0;
-    margin-top: 50px;
+    margin-top: 80px;
     height: 100px;
     width:100%;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    padding: 30px;    
+    padding: 40px; 
+    padding-top: 40px;   
 }
 .footer_social{
     display: flex;
@@ -630,6 +815,7 @@ h1{
         height: 140px;
         text-align: center;
         bottom: 0px;
+        line-height: 35px;
     }
     .footer_social{
         display: block;
