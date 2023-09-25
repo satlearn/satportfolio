@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
-    <link rel="stylesheet" -->
+    <!-- <link rel="stylesheet" --> 
+    <link rel="icon" type="image/x-icon" href="sat-logo.png">
     <href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> 
     <script src="https://kit.fontawesome.com/8a4930397f.js" crossorigin="anonymous"></script>
 </head>
@@ -39,18 +40,21 @@
         <!-- HOME SECTION -->
         <section class="home bd_grid" id="Home">
             <div class="home_data" data-aos="fade-down"->
-                <h1 class="home_title">Hi, <br> I am <span class="home_title_color">Sathya Dhanabal</span><br><em class="soft">Software Developer</em></h1><br>
-                <button type="button" class="btn"><a href="Sathya Dhanabal-CV-16March.pdf" download class="btn">Download cv</a></button>
-            </div>            
+                <h1 class="home_title">Hi, <br> I am <span class="home_title_color">Sathya Dhanabal</span><br><em class="soft">Junior Software Developer</em></h1><br>
+                <!-- <button type="button" class="btn"><a href="SathyaDhanabal-CV SEP.docx" download class="btn">Download CV</a></button> -->
+                <a href="https://www.linkedin.com/in/sathya-dhanabal-417800236/" class="linkedin_icon" target="_blank"><i class="fa-brands fa-linkedin fa-brands1"></i></a>   
+                <a href="https://github.com/satlearn" class="linkedin_icon" target="_blank"><i class="fa-brands fa-github fa-brands1"></i></a>
+            </div>                    
             <div class="home_img" data-aos="fade-left">
                 <img src="img1.svg" alt="img">
             </div> 
-            <!-- <div class="home_social"> 
+            <!-- <div class="home_social">  
                 <a href="#" class="home_social_icon"><i class="fa-brands fa-facebook"></i></a>  
                 <a href="#" class="home_social_icon"><i class="fa-brands fa-instagram"></i></a>  
                 <a href="#" class="home_social_icon"><i class="fa-brands fa-linkedin"></i></a>   
                 <a href="#" class="home_social_icon"><i class="fa-brands fa-github"></i></a>  
-            </div>   -->         
+            </div>   -->      
+               
         </section>
 
          <!-- ABOUT SECTION -->
@@ -63,7 +67,11 @@
                 <div class="about_me" data-aos="fade-down">
                     <h2 class="head">Hi</h2>
                     <div class="about_para">
-                        <p>As an enthusiastic Junior Software Developer, I have a strong understanding of HTML, JavaScript, CSS, Python, SQLite3, MySQL and Django. I recently completed a course in these technologies and created some project to demonstrate my skills. I love learning and am committed to continuous improvement. I can handle both front-end and back-end development, and I'm eager to contribute my expertise to your organization's success.
+                        <p>As an enthusiastic Junior Software Developer, I have developed a strong understanding of a diverse set of technologies, including HTML, JavaScript, CSS, Python, SQLite3, MySQL, and Django. I recently completed a skills course in these technologies and applied my learning to create several projects that showcase my abilities.<br><br>
+
+                        Driven by my passion for learning and a commitment to continuous improvement, I am proficient in both front-end and back-end development. My experience allows me to seamlessly transition between different aspects of development, enabling me to contribute effectively to the success of your organization.<br><br>
+                        
+                        I am excited about the opportunity to bring my skills and enthusiasm to your team. Looking forward to the possibility of contributing to your organization's growth.
                         </p>
                     </div>
                 </div>
@@ -71,8 +79,8 @@
         </section>
 
         <!-- SKILLS SECTION -->
-        <section class="skills_sec" data-aos="fade-down">
-            <h1 class="skills_heading" id="skills">Skills</h1>
+        <section class="skills_sec">
+            <h1 class="skills_heading" id="skills" data-aos="fade-down">Skills</h1>
             <div class="skills_container">
                 <div class="skills_div">
                     <h2 class="skill_subtitle">Professional Skills</h2>
@@ -121,11 +129,46 @@
                         </div>
                         <div><span class="skill_perentage">90%</span></div>
                         <div class="skill_bar skills_py"></div>
-                    </div>                                                                    
+                    </div> 
+                    <!-- Github -->
+                    <div class="skills_data" data-aos-delay="300" data-aos="fade-left">
+                        <div class="skills_name">
+                            <i class="fa-brands fa-github skills_icon"></i>
+                            <span class="skill">GITHUB</span>
+                        </div>
+                        <div><span class="skill_perentage">90%</span></div>
+                        <div class="skill_bar skills_py"></div>
+                    </div>  
+                    <!-- Django -->
+                    <div class="skills_data" data-aos-delay="350" data-aos="fade-left">
+                        <div class="skills_name">
+                            <!--<i class="fa-brands fa-django skills_icon"></i>-->
+                            <i class="fa-solid fa-d"></i>
+                            <!-- <i class="fa-solid fa-j"></i><br> -->
+                            <span class="skill" id="ski">DJANGO</span>
+                        </div>
+                        <div><span class="skill_perentage">80%</span></div>
+                        <div class="skill_bar skills_py"></div>
+                    </div> 
+                    <!--Bootstrap-->
+                    <div class="skills_data" data-aos-delay="400" data-aos="fade-left">
+                        <div class="skills_name">
+                            <i class="fa-brands fa-bootstrap skills_icon"></i>
+                            <span class="skill">BOOTSTRAP</span>
+                        </div>
+                        <div><span class="skill_perentage">80%</span></div>
+                        <div class="skill_bar skills_py"></div>
+                    </div>              
+
                 </div> 
-                <div class="skill_img" data-aos-delay="300" data-aos="fade-left">
+                
+                <div class="skill_img" data-aos-delay="450" data-aos="fade-left">
                     <img src="img3.svg" alt="img">
-                </div>                                
+                </div>
+                    <!-- <div class="skill_img" id="ski1" data-aos-delay="400" data-aos="fade-left">
+                        <img src="img6.svg" alt="img">
+                    </div>    -->
+                                                
             </div>
         </section>
         <!-- EDUCATION SECTION AND EXPERIENCE SECTION-->
@@ -134,29 +177,43 @@
                 <!-- EDUCATION SEC -->
                 <div class="col edu_main">
                     <div class="edu_title">
-                        <h2>Education</h2>
+                        <h2>Education and Training</h2>
                     </div>
                     <div class="e_content">
+                        <div class="box" data-aos-delay="40" data-aos="fade-left">
+                            <h4>2023 MAY - 2023 AUG</h4>
+                            <h3>SKILLED BOOTCAMP - SOFTWARE DEVELOPMENT</h3>
+                            <h3>FULL STACK DEVELOPER</h3>
+                            <p>Just IT<br>Minories, London EC3N 1DD
+                            </p>
+                        </div>
+                        <div class="box" data-aos-delay="45" data-aos="fade-left">
+                            <h4>2022 SEP - 2023 JAN</h4>
+                            <h3>SOFTWARE DEVELOPMENT TRAINING</h3>
+                            <h3>FULL STACK DEVELOPER</h3>
+                            <p>EK Academy<br>Thanjavur, India 613 005
+                            </p>
+                        </div>
                         <div class="box" data-aos-delay="50" data-aos="fade-left">
                             <h4>2009 - 2010</h4>
                             <h3>BACHELOR OF EDUCATION (B.ED) - SPECIALISATION MATHEMATICS</h3>
-                            <p>Star college of education<br><em>Address:</em> Periyamanali, Trichengode, , Namakkal, India
+                            <p>Star college of education<br>Periyamanali, Trichengode, , Namakkal, India
                             </p>
                         </div>
                         <div class="box" data-aos-delay="75" data-aos="fade-left">
                             <h4>2008 - 2009</h4>
                             <h3>MASTER OF SCIENCE (M.SC) - MATHEMATICS</h3>
-                            <p>Annamalai university<br><em>Address:</em> Annamalai nagar, Chidambaram, India</p>
+                            <p>Annamalai university<br>Annamalai nagar, Chidambaram, India</p>
                         </div>
                         <div class="box" data-aos-delay="100" data-aos="fade-left">
                             <h4>2004 - 2007</h4>
                             <h3>BACHELOR OF SCIENCE (B.SC) - MATHEMATICS</h3>
-                            <p>Vivekanandha arts and science for women<br><em>Address:</em> Elayampalayam, Tiruchengode,Namakkal, India</p>
+                            <p>Vivekanandha arts and science for women<br>Elayampalayam, Tiruchengode,Namakkal, India</p>
                         </div>
                         <div class="box" data-aos-delay="125" data-aos="fade-left">
                             <h4>2006 - 2007</h4>
                             <h3>XII STANDARD (12TH)</h3>
-                            <p>Govt Higher Secondary School<br><em>Address:</em> Vaiyappamalai, Tamil Nadu, India</p>
+                            <p>Govt Higher Secondary School<br>Vaiyappamalai, Tamil Nadu, India</p>
                         </div>                        
                     </div>
                 </div>
@@ -169,10 +226,9 @@
                         <div class="box" data-aos-delay="50" data-aos="fade-left">
                             <h4>2017 - 2018</h4>
                             <h3>TEACHER IN A PRIMARY SCHOOL - KALAIMAGAL VIDYA MANDIR MATRICULATION SCHOOL</h3>
-                            <p>Chennai, India</p>
-                            <p>1. Develop lesson plans by the curriculum objectives including mathematics, science, and humanities.<br>
-                            2. Educate the students through activity-based methods.
-                            </p>
+                            <p>Chennai, India</p>                            
+                            <p>1. Develop lesson plans by the curriculum objectives including mathematics, science, and humanities.<br> 
+                            2. Educate the students through activity-based methods.</p>
                         </div>
                         <!-- <div class="box">
                             <h4>2010 - 2011</h4>
@@ -181,7 +237,10 @@
                         </div> -->
                         <div class="skill_img" data-aos-delay="150" data-aos="fade-left">
                             <img src="img4.svg" alt="img" class="img4">
-                        </div>                 
+                        </div>
+                        <div class="skill_img" data-aos-delay="170" data-aos="fade-left">
+                            <img src="img5.svg" alt="img" class="img5">
+                        </div>                      
                     </div>
                 </div>
             </div>
@@ -192,13 +251,24 @@
             <h1 class="section_title" id="pro">My Projects</h1>
             <div class="pro_container container-fluid">
                 <div class="pro_box" data-aos-delay="50" data-aos="fade-down">
+                    <img src="dice.jpg" alt="img">
+                    <div class="pro_layer">
+                        <h4>Dice Game</h4>
+                        <p>SQLite</p>
+                        <p>Python</p>
+                        <p>HTML</p>
+                        <p>CSS</p>                        
+                        <a href="https://satlearn.github.io/dicegame/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="pro_box" data-aos-delay="50" data-aos="fade-down">
                     <img src="calculator.jpg" alt="img">
                     <div class="pro_layer">
                         <h4>Calculator</h4>
                         <p>HTML</p>
                         <p>CSS</p>
                         <p>JAVASCRIPT</p>
-                        <a href="https://satlearn.github.io/calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://satlearn.github.io/calculator/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="pro_box" data-aos-delay="50" data-aos="fade-down"> 
@@ -208,19 +278,30 @@
                         <p>HTML</p>
                         <p>CSS</p>
                         <p>JAVASCRIPT</p>
-                        <a href="https://satlearn.github.io/timer/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://satlearn.github.io/timer/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="pro_box" data-aos-delay="50" data-aos="fade-down">
+                <div class="pro_box" data-aos-delay="100" data-aos="fade-down">
                     <img src="colors.jpg" alt="img">
                     <div class="pro_layer">
                         <h4>Color Flipper</h4>
                         <p>HTML</p>
                         <p>CSS</p>
                         <p>JAVASCRIPT</p>
-                        <a href="https://satlearn.github.io/colorFlipper/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://satlearn.github.io/colorFlipper/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
+                <div class="pro_box" data-aos-delay="100" data-aos="fade-down">
+                    <img src="quiz.jpg" alt="img">
+                    <div class="pro_layer">
+                        <h4>Quiz Game</h4>
+                        <p>SQLite</p>
+                        <p>Python</p>
+                        <p>HTML</p>
+                        <p>CSS</p>                        
+                        <a href="https://satlearn.github.io/quizgame/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>                
                 <div class="pro_box" data-aos-delay="100" data-aos="fade-down">
                     <img src="stopwatch.jpg" alt="img">
                     <div class="pro_layer">
@@ -228,27 +309,27 @@
                         <p>HTML</p>
                         <p>CSS</p>
                         <p>JAVASCRIPT</p>
-                        <a href="https://satlearn.github.io/stopwatch/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://satlearn.github.io/stopwatch/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="pro_box" data-aos-delay="100" data-aos="fade-down">
+                <div class="pro_box" data-aos-delay="150" data-aos="fade-down">
                     <img src="Todo.jpg" alt="img">
                     <div class="pro_layer">
                         <h4>To-do List</h4>
                         <p>HTML</p>
                         <p>CSS</p>
                         <p>JAVASCRIPT</p>
-                        <a href="https://satlearn.github.io/Tdo-list/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://satlearn.github.io/Tdo-list/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="pro_box" data-aos-delay="100" data-aos="fade-down">
+                <div class="pro_box" data-aos-delay="150" data-aos="fade-down">
                     <img src="university.jpg" alt="img">
                     <div class="pro_layer">
                         <h4>University</h4>
                         <p>HTML</p>
                         <p>CSS</p>
                         <p>JAVASCRIPT</p>
-                        <a href="https://satlearn.github.io/EducationWebsite/#Features"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://satlearn.github.io/EducationWebsite/#Features" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="pro_box" data-aos-delay="150" data-aos="fade-down">
@@ -259,31 +340,9 @@
                         <p>Python</p>
                         <p>HTML</p>
                         <p>CSS</p>                        
-                        <a href="https://satlearn.github.io/filmDB/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://satlearn.github.io/filmDB/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-                </div>
-                <div class="pro_box" data-aos-delay="150" data-aos="fade-down">
-                    <img src="quiz.jpg" alt="img">
-                    <div class="pro_layer">
-                        <h4>Quiz Game</h4>
-                        <p>SQLite</p>
-                        <p>Python</p>
-                        <p>HTML</p>
-                        <p>CSS</p>                        
-                        <a href="https://satlearn.github.io/quizgame/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="pro_box" data-aos-delay="150" data-aos="fade-down">
-                    <img src="dice.jpg" alt="img">
-                    <div class="pro_layer">
-                        <h4>Dice Game</h4>
-                        <p>SQLite</p>
-                        <p>Python</p>
-                        <p>HTML</p>
-                        <p>CSS</p>                        
-                        <a href="https://satlearn.github.io/dicegame/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+                </div>                
                </div>
             </div>
         </section>
@@ -300,13 +359,12 @@
                  </form>-->
                 <main class="row">
                     <!-- left section column -->
-                    <section class="col col-left">
+                    <section class="col col-left" data-aos="fade-right">
                         <div class="contact_title1">
-                            <h2>Get In Touch</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus eius nemo, praesentium dolorum sed</p>
+                            <h2>Get In Touch</h2>                            
                         </div>
                         <div class="contactInfo">
-                            <div class="icongroup">
+                            <!-- <div class="icongroup"> 
                                 <div class="icon">
                                     <i class="fa-solid fa-phone"></i>
                                 </div>
@@ -314,7 +372,7 @@
                                     <span>Phone:</span>
                                     <span>+44 7440384349</span>
                                 </div>
-                            </div>
+                            </div>-->
                             <div class="icongroup">
                                 <div class="icon">
                                     <i class="fa-solid fa-envelope"></i>
@@ -330,13 +388,13 @@
                                 </div>
                                 <div class="details">
                                     <span>Location:</span>
-                                    <span>Flat 11, Balfour house, IG1 1TL.</span>
+                                    <span>Ilford, London.</span>
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    <!-- right section column -->
+                    <!-- right section column 
                     <section class="col col-right">
                         <form action="" class="msgForm">
                             <div class="inputGroup halgWidth">
@@ -355,6 +413,26 @@
                                 <button>Send Message</button>
                             </div>
                         </form>
+                    </section>-->
+                    <section class="col col-right" data-aos="fade-left">
+                        <form action="https://formspree.io/f/mdoreqgd" method="POST" class="msgForm">
+                            <h2>Send Message</h2>
+                            <div class="inputGroup halgWidth">
+                                <input type="text" placeholder="" name="fullname" required/>
+                                <span>Full Name</span>
+                            </div>
+                            <div class="inputGroup halgWidth">
+                                <input type="email" placeholder="" name="email" required/>
+                                <span>Email</span>
+                            </div>
+                            <div class="inputGroup halgWidth">
+                                <textarea name="message" required></textarea>
+                                <span>Type your message...</span>
+                            </div>
+                            <div class="inputGroup halgWidth">
+                                <input type="submit" value="submit">                                
+                            </div>
+                        </form>
                     </section>
                 </main>
             </div>
@@ -364,11 +442,12 @@
     <!-- Footer section -->
     <footer class="footer">
         <p>Sathya Dhanabal</p>        
-        <div class="footer_social"> 
-            <a href="https://www.facebook.com/sathya.bhoopathy" class="footer_icon"><i class="fa-brands fa-facebook"></i></a>  
-            <a href="#" class="footer_icon"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/sathya-dhanabal-417800236/" class="footer_icon"><i class="fa-brands fa-linkedin"></i></a>   
-            <a href="https://github.com/satlearn" class="footer_icon"><i class="fa-brands fa-github"></i></a>  
+        <div class="footer_social">             
+            <!-- <a href="#" class="footer_icon"><i class="fa-brands fa-instagram" target="_blank"></i></a> -->
+            <a href="https://www.linkedin.com/in/sathya-dhanabal-417800236/" class="footer_icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>   
+            <a href="https://github.com/satlearn" class="footer_icon" target="_blank"><i class="fa-brands fa-github"></i></a>  
+            <a href="https://www.facebook.com/sathya.bhoopathy" class="footer_icon" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
+            <a href="#Home" class="footer_icon"><i class="fa-solid fa-house-user"></i></a> 
         </div>
         <p>&copy; 2023 - All rights reserved.</p>
     </footer>

@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&family=Satisfy&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&family=Roboto:wght@500&family=Satisfy&display=swap');
+
+
 /* variables */
 :root{
     --header-height:2rem;
@@ -114,6 +117,7 @@ img{
     align-items: center;
     height: 50px;
     /* width:100%; */
+    /* font-family:Roboto; */
   }
   
   /* Style the logo */
@@ -191,6 +195,8 @@ img{
         cursor: pointer;
         margin-top: 50px;
         color:black;
+        margin-right: 20px;
+
     }
   
     .nav_list {
@@ -229,6 +235,11 @@ img{
         font-size: 30px;
     }
 }
+
+/* CSS for small screen */
+
+
+
 .active{
     right:0;
 }
@@ -237,18 +248,21 @@ img{
     width:500px;
     height:300px;
     margin-top: 50px;
+    margin-right: 100px;
 }
 .home{
     display:flex;    
     justify-content: space-between;
     align-items:center;
-    padding:4% 10%;      
+    padding:4% 10%;          
 }
-.home_social{
+/* .home_social{
     display: block;
-    position: relative;
-    
-}
+    position: relative; 
+    margin-right: 10%;
+    padding-right: 10px;
+    justify-content: end;    
+}*/
 .home_data{
     align-self: center;    
     margin-top: 100px;
@@ -298,6 +312,26 @@ img{
     color:var(--second-color)
 }
 
+.linkedin_icon{
+    font-size: 40px;
+    padding: 15px;
+}
+.fa-brands1{
+    margin-top: 35px;
+}
+.fa-brands1:hover{
+    color: #0d0a0a;
+    transition: 2s;
+}
+
+@media screen and (max-width:1000px) {
+    .home_img{
+        padding-top: 80px;
+    }    
+}
+
+
+
 /* ABOUT SECTION */
 .about_img{    
     width:100%;
@@ -310,6 +344,7 @@ h1{
     text-align: center;
     margin-right: 10px;
     font-size: 30px;
+    color:var(--second-color)
 }
 .about_container{
     display: flex;
@@ -326,7 +361,7 @@ h1{
 .about_para p{
     margin-top: 10px;
     font-size: 20px; 
-    color: var(--second-color);  
+    color: var(--first-color);  
     font-size: 25px; 
     line-height: 30px;
 }
@@ -356,6 +391,9 @@ h1{
 .skills_div{
     text-align: center;
     margin-top: 20px;
+}
+#ski{
+    padding-left: 15px;
 }
 .skill_subtitle{
     margin-top: 20px;
@@ -427,8 +465,20 @@ h1{
 }
 .skill_img{
     width:600px;
-    margin-top: 40px;
+    height: 500px; 
+    margin-top: 200px;
+    margin-right: 80px;    
 }
+/* .image1{
+    width:200px;
+    height: 200px;
+    display: block;
+}
+#ski1{
+    position: relative;
+    height: 400px;
+    width:600px;
+} */
 @media screen and (max-width: 1000px){
     .skills_container{
         display: block;
@@ -436,7 +486,7 @@ h1{
     .skill_img{
         width:90%; 
         margin-left: 40px;
-        margin-top: 70px;
+        margin-top: 200px; 
 }
 }
 
@@ -479,7 +529,7 @@ h1{
     border:1px solid rgb(237, 235, 238);
     background-color: #f25bc7;
     cursor: pointer;
-    transition: all 0.4s;
+    transition: all 2s;
     margin-bottom: 20px;
     border-radius: 10px;    
 }
@@ -490,7 +540,8 @@ h1{
     border: #000;
     background-color: #6522ea;
     transition: 1s;
-    color: white;    
+    color: white; 
+    transition: 3s;   
 }
 .box::before{
     content: '';
@@ -504,14 +555,14 @@ h1{
     border: 2px solid white;
 }
 
-.img4{
-    height: 400px;
-    width: 400px;
+.img4, .img5{
+    height: 315px;
+    width: 315px;
     margin-left: 200px;
-    margin-top: 150px;
+    /* margin-bottom: 50px; */
 }
 @media screen and (max-width: 1000px) {
-    .img4{
+    .img4, .img5{
         margin-left: 20px;                 
     }    
 }
@@ -672,10 +723,10 @@ h1{
     margin-right: 60px;
     /* background-color: #d49ff3; */
 }
-.col-right{
-    flex-basis: 50%;
-    /* background-color: #b73cfd; */
-}
+/* .col-right{ */
+    /* flex-basis: 50%; */
+    /* background-color: #b73cfd; }*/
+
 .contact_title1{
     margin-bottom: 5px;
 }
@@ -689,6 +740,7 @@ h1{
     margin: 25px;
     font-size: 20px;
     color: #000;
+    margin-top: 30px;
 }
 .icon{
     width: 35px;
@@ -707,8 +759,7 @@ h1{
     transform: translate(-50%, -50%);
 }
 
-.msgForm{
-    /* width:200px; */
+/* .msgForm{ 
     margin-top: 20px;
 }
 .inputGroup{
@@ -749,14 +800,80 @@ h1{
     transform: scale(1.1);
     background-color: #530482;  
     color: white;
-
+} */
+.col-right{
+    width: 50%;
+    padding: 40px;
+    background-color: rgb(175, 27, 244);
+    color: #000;
+    border-radius: 20px;
 }
+.msgForm h2{
+   font-size: 25px;
+   margin-bottom: 10px;
+}
+.msgForm .inputGroup{
+    position: relative;
+    width:100%;
+}
+.msgForm .inputGroup input{
+    width: 100%;
+padding: 5px 0px;
+font-size: 16px;
+margin: 10px 0px;
+border: none;
+border-bottom: 2px solid #000;
+outline: none;
+resize: none;
+}
+.msgForm .inputGroup textarea{
+width: 100%;
+padding: 5px 0px;
+font-size: 16px;
+margin: 10px 0px;
+border: none;
+border-bottom: 2px solid #000;
+outline: none;
+resize: none;
+}
+.msgForm .inputGroup span{
+    position:absolute;
+    left:0;
+    padding: 5px 0px;
+    font-size: 16px;
+    margin: 10px 0px;
+    pointer-events: none;
+    transition: 0.5s;    
+}
+.msgForm .inputGroup input:focus ~ span,
+.msgForm .inputGroup input:valid ~ span,
+.msgForm .inputGroup textarea:focus ~ span,
+.msgForm .inputGroup textarea:valid ~ span
+{
+    color: black;
+    transform:translateY(-25px)
+}
+.msgForm .inputGroup input[type="submit"]
+{
+    width:100px;
+    background-color: black;
+    color:white;
+    border: none;
+    cursor:pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 40%;
+}
+
+
 @media screen and (max-width: 1000px) {
     .row{
         display: block;
         text-align: center;
         align-items:center;
         width: 40%;
+        flex-direction: column;
         
     }
     .contact_section{
@@ -778,9 +895,27 @@ h1{
         text-align: center;
         margin-left: 40%;
     }
-    
-    
+     /*.msgForm textarea, .label2{
+        resize: none; 
+        height: 100px;
+        display: block;
+        width:220px;
+    }*/
+    .col-right{
+        margin-top: 50px;
+        width: 250px;
+        /* margin-right: 1000px; */        
+    }
+    .msgForm .inputGroup input[type="submit"]
+    {
+    width:70px;
+    margin-left:5%;
+    padding: 3px;
+    font-size: 18px;
 }
+}
+
+
 /* FOOTER */
 .footer{
     background-color:var(--second-color);
@@ -788,6 +923,7 @@ h1{
     bottom: 0;
     margin-top: 80px;
     height: 100px;
+    /* width:100%; */
     width:100%;
     display: flex;
     justify-content: space-between;
@@ -816,6 +952,7 @@ h1{
         text-align: center;
         bottom: 0px;
         line-height: 35px;
+        width:100%;
     }
     .footer_social{
         display: block;
