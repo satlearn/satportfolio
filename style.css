@@ -466,7 +466,7 @@ h1{
 .skill_img{
     width:600px;
     height: 500px; 
-    margin-top: 200px;
+    margin-top: 100px;
     margin-right: 80px;    
 }
 /* .image1{
@@ -559,7 +559,7 @@ h1{
     height: 315px;
     width: 315px;
     margin-left: 200px;
-    /* margin-bottom: 50px; */
+    /* margin-bottom: 700px; */
 }
 @media screen and (max-width: 1000px) {
     .img4, .img5{
