@@ -365,6 +365,11 @@ h1{
     font-size: 25px; 
     line-height: 30px;
 }
+.eng{
+    color:#000;
+    font-size: 25px;
+    font-weight: bold;
+}
 @media screen and (max-width: 1000px){
     .about_container {
         display: block;
