@@ -469,12 +469,25 @@ h1{
     margin-top: 100px;
     margin-right: 80px;    
 }
+.skill_img2{
+    width:500px;
+    height: 400px;
+    margin-top: -25px;
+    margin-bottom: 25px;
+    
+}
+
+.skill_img4 {
+    margin-top: -35px;
+    margin-bottom: 35px;
+}
+
 /* .image1{
     width:200px;
     height: 200px;
     display: block;
 }
-#ski1{
+#ski1l{
     position: relative;
     height: 400px;
     width:600px;
@@ -487,7 +500,17 @@ h1{
         width:90%; 
         margin-left: 40px;
         margin-top: 200px; 
-}
+    }
+    .skill_img2{   
+        margin-top: -25px;
+        margin-bottom: 25px;
+        
+    }
+
+    .skill_img4 {
+        margin-top: -35px;
+        margin-bottom: 35px;
+    }
 }
 
 /* EDUCATION AND EXPERIENCE*/
@@ -508,7 +531,7 @@ h1{
 .e_content{
     padding: 0 30px;
     border-left:solid#464242 2px;
-    line-height: 30px;
+    line-height: 35px;
 }
 
 .edu_title{
